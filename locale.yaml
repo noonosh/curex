@@ -2,7 +2,16 @@
 # This document is subject to copyright
 # Created and distributed to public by Nuriddin Islamov, December 2021
 
-name: ''
-language_support: true
+name: 'Curex Bot'
+version: '1.0.0'
+multilingual: false
+
 texts:
-    start: "😃 Hooray! You have successfully set up your bot!\n\nStart editing <code>main.py</code> file"
+  start: "Hey mate. It's a currency exchange place. Not FOREX tho, but have a good time playing around with the calculator. Send the command /kalkulyator to try ii!"
+  help: 'Help message'
+  home_display: 'Home page'
+
+  buttons:
+    exchange: 'Exchange'
+    my_info: 'My info'
+    settings: 'Settings'
