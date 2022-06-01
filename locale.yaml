@@ -2,7 +2,7 @@
 # This document is subject to copyright
 # Created and distributed to public by Nuriddin Islamov, December 2021
 
-name: 'Curex Bot'
+name: 'Bugungi kurs Bot'
 version: '1.0.0'
 multilingual: false
 
@@ -10,8 +10,18 @@ texts:
   start: "Hey mate. It's a currency exchange place. Not FOREX tho, but have a good time playing around with the calculator. Send the command /kalkulyator to try ii!"
   help: 'Help message'
   home_display: 'Home page'
+  choose_exchange_type: 'Choose exchange type'
+  invalid_input: 'Invalid input type!'
 
   buttons:
     exchange: 'Exchange'
     my_info: 'My info'
     settings: 'Settings'
+    uzs_to_usd: 'UZS 🇺🇿 >> USD 🇺🇸'
+    usd_to_uzs: 'USD 🇺🇸 >> UZS 🇺🇿'
+    back: '<- Back'
+    one_dollar: '$1'
+    one_uzs: 'UZS 1'
+
+paths:
+  choose_exchange_type: 'static/ex-type.png'

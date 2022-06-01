@@ -20,3 +20,7 @@ def button(key: str):
     Reads texts from locale.yaml file. Return the string of the given key.
     """
     return contents['texts']['buttons'][key]
+
+
+def custom(key: str):
+    return contents[key]
