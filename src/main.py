@@ -4,11 +4,12 @@ import logging
 from telegram.ext import (Updater,
                           CommandHandler,
                           ConversationHandler,
-                          MessageHandler, Filters)
+                          MessageHandler, Filters,
+                          CallbackQueryHandler)
 from utils.hide_token import secure_token
 from utils.text import open_locale_file, button
 from utils.logger import logger
-from src.components import start, commands, home
+from src.components import start, commands, home, calculator
 
 dotenv.load_dotenv()
 
@@ -16,9 +17,10 @@ dotenv.load_dotenv()
 DEBUG = os.environ.get('DEBUG', True)
 BOT_TOKEN = os.environ.get('BOT_TOKEN')
 
-starter = start.Starter()
-command = commands.Commands()
+start = start.Start()
+commands = commands.Commands()
 home = home.Home()
+calculator = calculator.Calculator()
 
 
 def main():
@@ -35,7 +37,7 @@ def main():
 
     main_conversation = ConversationHandler(
         entry_points=[
-            CommandHandler('start', starter.start)
+            CommandHandler('start', start.start)
         ],
         states={
             "HOME_DISPLAY": [
@@ -43,11 +45,21 @@ def main():
                                home.exchange),
                 CommandHandler('kalkulyator', home.exchange),
                 CommandHandler('kurs', home.rate_info),
+            ],
+            "EXCHANGE_CALCULATOR_TYPE": [
+                CallbackQueryHandler(
+                    calculator.get_exchange_type, pattern='uzs-to-usd|usd-to-uzs'),
+                CallbackQueryHandler(
+                    home.back_to_display, pattern='back'),
+            ],
+            "EXCHANGE_OUT": [
+
             ]
         },
         fallbacks=[
-            CommandHandler('help', command.help),
-            CommandHandler('start', command.start)
+            CommandHandler('help', commands.help),
+            CommandHandler('start', commands.start),
+            MessageHandler(Filters.text, commands.invalid_type)
         ]
     )
 

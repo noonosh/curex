@@ -7,7 +7,7 @@ from ..main import logger
 home = Home()
 
 
-class Starter():
+class Start():
 
     def start(self, update: Update, context: CallbackContext) -> None:
         """
