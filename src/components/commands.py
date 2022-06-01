@@ -1,5 +1,6 @@
 from telegram.ext import CallbackContext
 from telegram import Update
+from utils.text import text
 
 
 class Commands():
@@ -12,3 +13,6 @@ class Commands():
 
     def start(self, update: Update, context: CallbackContext):
         update.effective_message.reply_text("Restarted bot")
+
+    def invalid_type(self, update: Update, context: CallbackContext):
+        update.effective_message.reply_text(text('invalid_input'))
