@@ -41,7 +41,7 @@ def main():
         ],
         states={
             "HOME_DISPLAY": [
-                MessageHandler(Filters.text(button('exchange')),
+                MessageHandler(Filters.regex(button('exchange')),
                                home.exchange),
                 CommandHandler('kalkulyator', home.exchange),
                 CommandHandler('kurs', home.rate_info),
@@ -52,8 +52,10 @@ def main():
                 CallbackQueryHandler(
                     home.back_to_display, pattern='back'),
             ],
-            "EXCHANGE_OUT": [
-
+            "EXCHANGE_AMOUNT": [
+                MessageHandler(Filters.regex(button('home_page')),
+                               home.back_to_display),
+                MessageHandler(Filters.text, calculator.calculate)
             ]
         },
         fallbacks=[

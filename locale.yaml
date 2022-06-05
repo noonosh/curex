@@ -20,6 +20,7 @@ texts:
     uzs_to_usd: 'UZS 🇺🇿 >> USD 🇺🇸'
     usd_to_uzs: 'USD 🇺🇸 >> UZS 🇺🇿'
     back: '<- Back'
+    home_page: '<< Home page'
     one_dollar: '$1'
     one_uzs: 'UZS 1'
 
