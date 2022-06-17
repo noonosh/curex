@@ -7,20 +7,22 @@ version: '1.0.0'
 multilingual: false
 
 texts:
-  start: "Hey mate. It's a currency exchange place. Not FOREX tho, but have a good time playing around with the calculator. Send the command /kalkulyator to try ii!"
-  help: 'Help message'
-  home_display: 'Home page'
-  choose_exchange_type: 'Choose exchange type'
-  invalid_input: 'Invalid input type!'
+  start: "Assalomu alaykum!\n\nMen valyuta ayirboshlash kurslari haqida ma'lumot beruvchi botman.\n\nHattoki, kalkulyator vazifasini ham bajara olaman. Uning uchun /kalkulyator buyrug'ini bering va xisob-kitob qilishda adashmang."
+  help: 'Yordam beruvchi menyu'
+  home_display: "Asosiy bo'lim"
+  choose_exchange_type: '👇 Valyutani tanlang'
+  invalid_input: 'Bunisini tushunmadim lekin!'
+  choose_or_input_amount: 'OK! Endi amoutlardan birini tanlang yoki ozingizikini kiriting. (TRANSLATION REQUIRED)'
+  calculator_out: '🧮 Natija:'
 
   buttons:
-    exchange: 'Exchange'
-    my_info: 'My info'
-    settings: 'Settings'
-    uzs_to_usd: 'UZS 🇺🇿 >> USD 🇺🇸'
-    usd_to_uzs: 'USD 🇺🇸 >> UZS 🇺🇿'
-    back: '<- Back'
-    home_page: '<< Home page'
+    exchange: 'Ayirboshlash'
+    my_info: "Mening ma'lumotlarim"
+    settings: 'Sozlamalar'
+    uzs_to_usd: 'UZS 🇺🇿 ➡️ USD 🇺🇸'
+    usd_to_uzs: 'USD 🇺🇸 ➡️ UZS 🇺🇿'
+    back: '🔙 Orqaga'
+    home_page: "🏠 Asosiy bo'lim"
     one_dollar: '$1'
     one_uzs: 'UZS 1'
 
