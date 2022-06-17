@@ -46,9 +46,7 @@ def main():
                 MessageHandler(Filters.regex(button('settings')),
                                home.settings),
                 MessageHandler(Filters.regex(button('my_info')),
-                               home.my_info),
-                CommandHandler('kalkulyator', home.exchange),
-                CommandHandler('kurs', home.rate_info),
+                               home.my_info)
             ],
             "EXCHANGE_CALCULATOR_TYPE": [
                 CallbackQueryHandler(
@@ -59,12 +57,15 @@ def main():
             "EXCHANGE_AMOUNT": [
                 MessageHandler(Filters.regex(button('home_page')),
                                home.back_to_display),
-                MessageHandler(Filters.text, calculator.calculate)
+                MessageHandler(Filters.text & (~ Filters.command),
+                               calculator.calculate)
             ]
         },
         fallbacks=[
             CommandHandler('help', commands.help),
             CommandHandler('start', commands.start),
+            CommandHandler('kurs', home.rate_info),
+            CommandHandler('kalkulyator', home.exchange),
             MessageHandler(Filters.text, commands.invalid_type)
         ]
     )
