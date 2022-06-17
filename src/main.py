@@ -43,6 +43,10 @@ def main():
             "HOME_DISPLAY": [
                 MessageHandler(Filters.regex(button('exchange')),
                                home.exchange),
+                MessageHandler(Filters.regex(button('settings')),
+                               home.settings),
+                MessageHandler(Filters.regex(button('my_info')),
+                               home.my_info),
                 CommandHandler('kalkulyator', home.exchange),
                 CommandHandler('kurs', home.rate_info),
             ],
