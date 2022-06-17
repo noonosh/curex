@@ -84,7 +84,7 @@ class Calculator():
             message = "🇺🇸 ➡️ 🇺🇿"
             defaults_markup = self.__create_default_amounts_markup(
                 self,
-                [1, 5, 10, 200, 100000], True,
+                [1, 5, 10, 200, 100], True,
                 footer_buttons=button('home_page')
             )
         else:
