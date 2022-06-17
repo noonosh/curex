@@ -1,6 +1,7 @@
 anyio==3.6.1
 APScheduler==3.6.3
 asgiref==3.5.2
+attrs==21.4.0
 autopep8==1.6.0
 beautifulsoup4==4.11.1
 cachetools==4.2.2
@@ -10,7 +11,13 @@ h11==0.12.0
 httpcore==0.14.7
 httpx==0.22.0
 idna==3.3
+iniconfig==1.1.1
+packaging==21.3
+pluggy==1.0.0
+py==1.11.0
 pycodestyle==2.8.0
+pyparsing==3.0.9
+pytest==7.1.2
 python-dotenv==0.19.2
 python-telegram-bot==13.12
 pytz==2021.3
@@ -24,6 +31,7 @@ sniffio==1.2.0
 soupsieve==2.3.2.post1
 sqlparse==0.4.2
 toml==0.10.2
+tomli==2.0.1
 tornado==6.1
 tzdata==2021.5
 tzlocal==4.1
