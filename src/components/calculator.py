@@ -27,8 +27,8 @@ class Calculator():
         curs = soup.find_all('div', class_='col-4')
         print(type(curs))
 
-        UZS_TO_USD = 11300.90
-        USD_TO_UZS = 11450.01
+        UZS_TO_USD = 11450.01
+        USD_TO_UZS = 11300.00
 
         return {
             'uzs-to-usd': UZS_TO_USD,
