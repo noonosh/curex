@@ -47,6 +47,12 @@ class Home():
 
         return 'EXCHANGE_CALCULATOR_TYPE'
 
+    def my_info(self, update: Update, context: CallbackContext):
+        update.effective_message.reply_text("Mening ma'lumotlarim menyusi")
+
+    def settings(self, update: Update, context: CallbackContext):
+        update.effective_message.reply_text("Sozlamalar menyusi")
+
     def back_to_display(self, update: Update, context: CallbackContext):
 
         if update.callback_query:
