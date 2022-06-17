@@ -15,7 +15,7 @@ class Start():
         """
         user = update.effective_user
         update.message.reply_html(
-            f"Hi <b>{user.id}</b>!",
+            text('start')
         )
         logger.info(f"User {user.id} initiated '/start' command")
 
