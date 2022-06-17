@@ -13,7 +13,7 @@ texts:
   choose_exchange_type: '👇 Valyutani tanlang'
   invalid_input: 'Bunisini tushunmadim lekin!'
   choose_or_input_amount: 'OK! Endi amoutlardan birini tanlang yoki ozingizikini kiriting. (TRANSLATION REQUIRED)'
-  calculator_out: '🧮 Natija:'
+  calculator_out: '👀 {}'
 
   buttons:
     exchange: 'Ayirboshlash'
