@@ -4,7 +4,7 @@ This bot enables you to get real time updates on USD/UZS currency exchange rates
 
 ## Screenshots
 
-<img src="https://snipboard.io/qnAkHy.jpg" alt='screenshot demo' width=512 height=512 />
+<img src="https://snipboard.io/qnAkHy.jpg" alt='screenshot demo' width=650 height=1024 />
 
 ## Environment Variables
 
