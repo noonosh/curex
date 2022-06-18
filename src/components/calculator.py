@@ -97,7 +97,7 @@ class Calculator():
 
     def calculate(self, update: Update, context: CallbackContext):
         chat_id = update.effective_chat.id
-        message = update.effective_message.text
+        message = update.effective_message.text.replace(" ", '')
 
         rates = self.__get_currency_rates()
         operation = context.user_data['operation']
