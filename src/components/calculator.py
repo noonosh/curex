@@ -102,6 +102,9 @@ class Calculator():
         rates = self.__get_currency_rates()
         operation = context.user_data['operation']
 
+        if not any(char.isdigit() for char in message):
+            update.effective_message.reply_text('no_digit_in_text')
+
         # Convert the number format for further processing
         amount = float(re.findall(
             r'[\d\.\,\d]+', message)[0].replace(',', ''))

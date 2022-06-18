@@ -14,6 +14,7 @@ texts:
   invalid_input: 'Bunisini tushunmadim lekin!'
   choose_or_input_amount: 'OK! Endi amoutlardan birini tanlang yoki ozingizikini kiriting. (TRANSLATION REQUIRED)'
   calculator_out: '👀 {}'
+  no_digit_in_text: '🫢 Ups, bu yerda raqam topa olmadim!'
 
   buttons:
     exchange: 'Ayirboshlash'
