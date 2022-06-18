@@ -109,7 +109,6 @@ class Calculator():
         amount = float(re.findall(
             r'[\d\.\,\d]+', message)[0].replace(',', ''))
 
-        # TODO: Using a symbol to represent the currency
         if operation == 'uzs-to-usd':
             out = amount / rates[operation]
             symbol = "$"
@@ -119,6 +118,10 @@ class Calculator():
         else:
             commands.Command().invalid_type(update, context)
 
-        out_text = text('calculator_out').format("{:,.2f}".format(out))
+        out_text = text('calculator_out').format(
+            f"{symbol} {'{:,.2f}'.format(out)}")
 
         context.bot.send_message(chat_id, out_text, parse_mode='HTML')
+
+    def quick_calculate(self, update: Update, context: CallbackContext):
+        update.effective_message.reply_text("tez kalkulyator")
