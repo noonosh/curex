@@ -1,46 +1,33 @@
-# 📑 Telegram Bot Template
+# CurrencyXchanger bot on Telegram
 
-This is a template repo for cloning and reusing to create custom telegram bots with [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot) library in Python.
+This bot enables you to get real time updates on USD/UZS currency exchange rates, calculate the right amount for you and notify with news daily/weekly.
 
-## Installation
+## Screenshots
 
-1. Clone the repo
+<img src="https://snipboard.io/qnAkHy.jpg" alt='screenshot demo' width=512 height=512 />
 
-```bash
-$ git clone https://github.com/nuriddinislamov/telegram-bot-template my-bot
-```
+## Environment Variables
 
-2. Download and install all dependencies with `pip`
+To run this project, you will need to add the following environment variables to your .env file
 
-```bash
-$ pip install -r requirements.txt
-```
+`BOT_TOKEN` – Get it from [BotFather](https://t.me/botfather)
 
-3.  Add an environment variable for bot's token. You can get one [here with BotFather](https://t.me/botfather).
+optionally `DEBUG` – True/False
 
-    -   **❗️ Deprecated version**
+## FAQ
 
-        ```bash
-        $ export BOT_TOKEN='your actual token'
-        ```
+#### Is it free to use?
 
-    -   **👍 Recommended**
-        Create a file with name `.env` (no name, just .env) and type in your bot's token as:
+Absolutely! It is totally free to use our bot. Sign up [now.](https://t.me/bugungikursbot)
 
-        `1. BOT_TOKEN='your actual token'`
+#### How often will I get updates?
 
-    <br/>
+Daily.
 
-4.  🎉 Great! Now run the bot and see the magic happen.
+#### Will this software improve in the future with different features?
 
-```bash
-$ python3 bot.py
-```
+No doubts at all.
 
-## Licence
+## License
 
-This template is under [MIT](/LICENSE) license.
-
-## Copyright
-
-&copy; Nuriddin Islamov, 2021
+[MIT](https://choosealicense.com/licenses/mit/)
